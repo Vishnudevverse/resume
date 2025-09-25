@@ -3,7 +3,7 @@ import "./App.css";
 
 export default function App() {
   const skillsGroups = {
-    "Frontend": ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Next.js"],
+    "Frontend": ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Next.js"],
     "Backend": ["Node.js", "Python", "Express.js", "MongoDB", "PostgreSQL", "REST APIs"],
     "Mobile": ["React Native", "Flutter"],
     "Tools": ["Git", "VS Code", "Docker", "Linux", "Figma", "Postman"],
@@ -82,26 +82,16 @@ export default function App() {
               <p className="education-location">Chennai, Tamil Nadu</p>
             </div>
           </div>
-
-          {/* Skills */}
-          <div className="skills-section">
-            <h2 className="section-title">TECHNICAL SKILLS</h2>
-            <div className="skills-list">
-              {Object.entries(skillsGroups).map(([category, skills]) => (
-                <div key={category}>
-                  <h3 className="skill-category">{category}</h3>
-                  <div className="skill-items">
-                    {skills.map((skill, index) => (
-                      <div key={index} className="skill-item">
-                        <span className="skill-bullet"></span>
-                        <span>{skill}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
+          
+          {/* Professional Development */}
+          <section className="development-section-sidebar">
+            <h2 className="section-title">PROFESSIONAL DEVELOPMENT</h2>
+            <div className="dev-card-sidebar">
+              <p className="dev-text-sidebar">
+                Currently exploring <span className="highlight-sidebar">advanced React patterns</span>, cloud technologies, and <span className="highlight-sidebar">DevOps practices</span> while focusing on creating <span className="highlight-sidebar">efficient automation solutions</span> and optimizing development workflows through smart scripting and performance enhancements.
+              </p>
             </div>
-          </div>
+          </section>
         </div>
 
         {/* Main Content */}
@@ -145,13 +135,22 @@ export default function App() {
             ))}
           </section>
 
-          {/* Professional Development */}
-          <section className="development-section">
-            <h2 className="main-title">PROFESSIONAL DEVELOPMENT</h2>
-            <div className="dev-card">
-              <p className="dev-text">
-                Currently exploring <span className="highlight-blue-dark">advanced React patterns</span>, cloud technologies, and <span className="highlight-blue-dark">DevOps practices</span> while focusing on creating <span className="highlight-dark">efficient automation solutions</span> and optimizing development workflows through smart scripting and performance enhancements.
-              </p>
+          {/* Technical Skills */}
+          <section className="skills-section-main">
+            <h2 className="main-title">TECHNICAL SKILLS</h2>
+            <div className="skills-grid-container">
+              {Object.entries(skillsGroups).map(([category, skills]) => (
+                <div key={category}>
+                  <h3 className="skill-category-main">{category}</h3>
+                  <div className="skill-items-grid">
+                    {skills.map((skill, index) => (
+                      <div key={index} className="skill-grid-item">
+                        {skill}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           </section>
         </div>
