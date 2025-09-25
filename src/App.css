@@ -11,17 +11,17 @@
   width: 20rem;
   background-color: var(--color-gray-900);
   color: white;
-  padding: 2rem;
+  padding: 1.5rem;
   min-height: 100vh;
 }
 
 .sidebar-header, .contact, .education {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .name {
-  font-size: 1.875rem;
-  margin-bottom: 0.75rem;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
   color: white;
   font-weight: 700;
   letter-spacing: 0.025em;
@@ -29,21 +29,21 @@
 
 .title {
   color: var(--color-gray-300);
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .subtitle {
   color: var(--color-gray-400);
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   margin-top: 0.25rem;
 }
 
 .section-title {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 700;
   color: white;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -51,7 +51,7 @@
 .contact-details {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
 .contact-item {
@@ -66,7 +66,7 @@
 }
 
 .contact-text {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   color: var(--color-gray-300);
   word-break: break-all;
 }
@@ -89,25 +89,29 @@
 
 .education-status {
   color: var(--color-gray-400);
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   font-weight: 500;
   margin-bottom: 0.25rem;
 }
 
 .education-location {
   color: var(--color-gray-400);
-  font-size: 0.875rem;
+  font-size: 0.8rem;
 }
 
 .skills-section-sidebar {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.skill-category-container {
+    margin-bottom: 1rem;
 }
 
 .skill-category-sidebar {
   color: var(--color-gray-300);
   font-weight: 700;
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.025em;
 }
@@ -115,41 +119,40 @@
 .skill-items-grid-sidebar {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
 .skill-grid-item-sidebar {
   background-color: var(--color-gray-800);
   color: var(--color-gray-200);
-  padding: 0.5rem;
+  padding: 0.4rem;
   border-radius: var(--radius);
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
 }
 
 .main-content {
   flex: 1;
-  padding: 2.5rem;
+  padding: 1.5rem;
 }
 
 .summary-section, .projects-section {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .main-title {
-  font-size: 1.875rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
   color: var(--color-gray-800);
   letter-spacing: 0.025em;
   border-bottom: 2px solid var(--color-gray-900);
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
 }
 
 .summary-text {
   color: var(--color-gray-700);
-  line-height: 1.625;
-  font-size: 1.125rem;
+  line-height: 1.5;
+  font-size: 0.9rem;
 }
 
 .highlight-dark {
@@ -163,10 +166,10 @@
 }
 
 .project-card {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   background-color: var(--color-gray-100);
   border-radius: var(--radius);
-  padding: 1.5rem;
+  padding: 1rem;
   border-left: 4px solid var(--color-gray-900);
 }
 
@@ -176,29 +179,31 @@
 }
 
 .project-header {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .project-title {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--color-gray-800);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .project-company {
+  font-size: 0.9rem;
   color: var(--color-gray-900);
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .project-meta {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   color: var(--color-gray-600);
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
 }
 
 .meta-item {
@@ -215,7 +220,7 @@
   color: var(--color-gray-700);
   display: flex;
   align-items: flex-start;
-  line-height: 1.625;
+  line-height: 1.5;
 }
 
 .description-bullet {
@@ -226,5 +231,5 @@
 }
 
 .description-text {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }

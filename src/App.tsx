@@ -87,7 +87,7 @@ export default function App() {
           <section className="skills-section-sidebar">
             <h2 className="section-title">TECHNICAL SKILLS</h2>
             {Object.entries(skillsGroups).map(([category, skills]) => (
-              <div key={category} style={{ marginBottom: '1.5rem' }}>
+              <div key={category} className="skill-category-container">
                 <h3 className="skill-category-sidebar">{category}</h3>
                 <div className="skill-items-grid-sidebar">
                   {skills.map((skill, index) => (
