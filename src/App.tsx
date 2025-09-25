@@ -3,17 +3,28 @@ import "./App.css";
 
 export default function App() {
   const skillsGroups = {
-    "Frontend": ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Next.js"],
-    "Backend": ["Node.js", "Python", "Express.js", "MongoDB", "PostgreSQL", "REST APIs"],
+    "Frontend": ["React JS", "JavaScript", "HTML5", "CSS3" ],
+    "Backend": ["php", "phpMyAdmin","MySQL"],
     "Mobile": ["React Native", "Flutter"],
-    "Tools": ["Git", "VS Code", "Docker", "Linux", "Figma", "Postman"],
-    "Core": ["Problem Solving", "Data Structures", "Algorithms", "System Design"]
+    "others": ["Git", "VS Code", "python", "GitHub", "Figma","Google Search Console","Bing Webmaster Tools" ],
+    "Core": ["Problem Solving", "Data Structures", "Algorithms", "System Design", "LeetCode" ]
   };
+// removed
+// "TypeScript"
+// "Next.js"
+// 
+// "Node.js", "Python", "Express.js", "MongoDB", "PostgreSQL", "REST APIs"
+// 
+// 
+// 
+// "Docker"
+// "Linux"
+// "Postman"
 
   const projects = [
     {
       title: "Hydrowaves.in — Client Business Website",
-      company: "Live Link: Hydrowaves.in",
+      company: "Live Link: hydrowaves.in",
       period: "2024",
       location: "Remote",
       description: [
