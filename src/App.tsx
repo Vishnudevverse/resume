@@ -83,14 +83,21 @@ export default function App() {
             </div>
           </div>
           
-          {/* Professional Development */}
-          <section className="development-section-sidebar">
-            <h2 className="section-title">PROFESSIONAL DEVELOPMENT</h2>
-            <div className="dev-card-sidebar">
-              <p className="dev-text-sidebar">
-                Currently exploring <span className="highlight-sidebar">advanced React patterns</span>, cloud technologies, and <span className="highlight-sidebar">DevOps practices</span> while focusing on creating <span className="highlight-sidebar">efficient automation solutions</span> and optimizing development workflows through smart scripting and performance enhancements.
-              </p>
-            </div>
+          {/* Technical Skills */}
+          <section className="skills-section-sidebar">
+            <h2 className="section-title">TECHNICAL SKILLS</h2>
+            {Object.entries(skillsGroups).map(([category, skills]) => (
+              <div key={category} style={{ marginBottom: '1.5rem' }}>
+                <h3 className="skill-category-sidebar">{category}</h3>
+                <div className="skill-items-grid-sidebar">
+                  {skills.map((skill, index) => (
+                    <div key={index} className="skill-grid-item-sidebar">
+                      {skill}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
           </section>
         </div>
 
@@ -133,25 +140,6 @@ export default function App() {
                 </ul>
               </div>
             ))}
-          </section>
-
-          {/* Technical Skills */}
-          <section className="skills-section-main">
-            <h2 className="main-title">TECHNICAL SKILLS</h2>
-            <div className="skills-grid-container">
-              {Object.entries(skillsGroups).map(([category, skills]) => (
-                <div key={category}>
-                  <h3 className="skill-category-main">{category}</h3>
-                  <div className="skill-items-grid">
-                    {skills.map((skill, index) => (
-                      <div key={index} className="skill-grid-item">
-                        {skill}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
           </section>
         </div>
       </div>
